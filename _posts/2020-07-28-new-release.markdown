@@ -5,13 +5,13 @@ date:   2020-07-27 14:11:47 +0200
 categories: update log4tc
 ---
 
-# Neue Ausgaben für Log-Meldungen und Bugfixing
+## Neue Ausgaben für Log-Meldungen und Bugfixing
 
 Dieses Release bringt die angekündigten Ausgaben für Influx und Graylog mit. Ausserdem kann der log4TC-Service jetzt über eine Datei konfiguriert werden. 
 
 Die neue Version steht auf [Hier](https://github.com/mbc-engineering/log4TC/releases) zum Download zur Verfügung.
 
-## Neue SPS-Library
+### Neue SPS-Library
 
 Die neue Library hat die Versionsnummer 0.0.5. Neben diversen Fehlerbereinigungen wurde die SPS-API um einen neuen Baustein ergänzt: `FB_LoggerLAC`. 
 
@@ -48,7 +48,7 @@ fbLog(
 );
 ```
 
-## Ausgabe nach Influx
+### Ausgabe nach Influx
 
 [InfluxDB](https://www.influxdata.com/) ist eine Open-Source Datenbank, spezialisiert auf die Verwaltung von Zeitreihendaten. Kurz gesagt, lassen sich damit verschiedene Daten (Nummerische Werte, Strings, etc.) mit einem Zeitstempel zeitlich geordnet speichern. Eine einfache Zeitreihe könnte z.B. eine Temperaturaufzeichnung sein:
 
@@ -75,7 +75,7 @@ Mit der `influxdb`-Ausgabe können jetzt solche Daten direkt aus log4TC geschrie
 
 [Influx-DB Ausgabe](https://mbc-engineering.github.io/log4TC/reference/influx_output.html)
 
-## Ausgabe nach Graylog
+### Ausgabe nach Graylog
 
 Für viele Anwendungen dürfte log4TC mit der NLog-Ausgabe, die lokale Dateien schreibt ausreichend sein. Sind aber mehrere Rechner mit TwinCAT im Einsatz wird das dezentrale Logging aber sehr schnell unübersichtlich und ineffizient bei der Überwachung und Fehlersuche. Für genau diesen Fall können jetzt Log-Meldungen an einen Graylog-Server zentralisiert weitergeleitet werden.
 
@@ -84,5 +84,4 @@ Für viele Anwendungen dürfte log4TC mit der NLog-Ausgabe, die lokale Dateien s
 Da Graylog intern eine Log-Meldung strukturiert speichert, passt dieses System nahtlos zu log4TC.
 
 [Graylog Ausgabe](https://mbc-engineering.github.io/log4TC/reference/graylog_output.html)
-
 
